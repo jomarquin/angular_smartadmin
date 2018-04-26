@@ -15,7 +15,7 @@ import 'rxjs/add/observable/fromEvent';
 // Smartadmin Dependencies
 window['jQuery'] = require('jquery');
 window['$'] = window['jQuery'];
-// import 'jquery-ui-npm/jquery-ui.min.js'
+import 'jquery-ui-npm/jquery-ui.min.js'
 
 require('bootstrap/js/tooltip.js'); // required for X-editable
 require('bootstrap/js/popover.js'); // required for X-editable

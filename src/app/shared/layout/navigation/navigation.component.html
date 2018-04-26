@@ -11,13 +11,26 @@
     -->
 
     <ul saSmartMenu>
+      <li>
+        <a title="Home"><i class="fa fa-lg fa-fw fa-home"></i> <span
+          class="menu-item-parent">{{'HOME' | i18n}}</span></a>
+      </li>    
 
-      <li routerLinkActive="active">
-        <a routerLink="/home" title="Home">
-          <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{'Home' | i18n}}</span></a>
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span
+          class="menu-item-parent">{{'Cursos' | i18n}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/tables/datatables">{{'Cursos Activos' | i18n}} </a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/tables/normal">{{'Todos los Cursos' | i18n}}</a>
+          </li>
+        </ul>
       </li>
 
     </ul>
+    
   </nav>
 
   <sa-minify-menu></sa-minify-menu>
